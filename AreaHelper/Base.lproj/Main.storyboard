@@ -78,49 +78,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRi-sF-g3J">
-                                <rect key="frame" x="160" y="591" width="58" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Circle"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="CzK-ij-pZv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHF-ho-Ryz">
-                                <rect key="frame" x="150" y="410" width="79" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Triangle"/>
-                                <connections>
-                                    <segue destination="gBa-fV-cZm" kind="show" id="sAf-FK-6aM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-hO-s7c">
-                                <rect key="frame" x="139" y="247" width="100" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Rectangle"/>
-                                <connections>
-                                    <segue destination="GwJ-rW-JMS" kind="show" id="fUD-GE-5HI"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Area Helper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTe-8x-8KY">
-                                <rect key="frame" x="89" y="94" width="197" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area Helper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTe-8x-8KY">
+                                <rect key="frame" x="89.333333333333329" y="112" width="196.33333333333337" height="69"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="143" translatesAutoresizingMaskIntoConstraints="NO" id="TLA-LR-xO4">
+                                <rect key="frame" x="31" y="237" width="312" height="406"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-hO-s7c">
+                                        <rect key="frame" x="106" y="0.0" width="100" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Rectangle"/>
+                                        <connections>
+                                            <segue destination="GwJ-rW-JMS" kind="show" id="fUD-GE-5HI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHF-ho-Ryz">
+                                        <rect key="frame" x="116.33333333333331" y="183" width="79" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Triangle"/>
+                                        <connections>
+                                            <segue destination="gBa-fV-cZm" kind="show" id="sAf-FK-6aM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRi-sF-g3J">
+                                        <rect key="frame" x="127" y="366" width="58" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Circle"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="CzK-ij-pZv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KRi-sF-g3J" firstAttribute="top" secondItem="FHF-ho-Ryz" secondAttribute="bottom" constant="142.99999999999994" id="DLo-8c-zv7"/>
+                                    <constraint firstItem="FHF-ho-Ryz" firstAttribute="top" secondItem="Lxk-hO-s7c" secondAttribute="bottom" constant="143.00000000000003" id="ZYS-Nm-NUQ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TLA-LR-xO4" firstAttribute="centerX" secondItem="gGB-VY-i5Z" secondAttribute="centerX" id="4C6-4E-aWZ"/>
+                            <constraint firstItem="FHF-ho-Ryz" firstAttribute="centerX" secondItem="gGB-VY-i5Z" secondAttribute="centerX" id="7OK-Ri-O1M"/>
+                            <constraint firstItem="FHF-ho-Ryz" firstAttribute="centerY" secondItem="gGB-VY-i5Z" secondAttribute="centerY" id="8LC-C6-tTw"/>
+                            <constraint firstItem="FHF-ho-Ryz" firstAttribute="centerY" secondItem="gGB-VY-i5Z" secondAttribute="centerY" id="CJ0-Jh-IMl"/>
+                            <constraint firstItem="LTe-8x-8KY" firstAttribute="top" secondItem="gGB-VY-i5Z" secondAttribute="top" constant="24" id="L2M-1K-Y0N"/>
+                            <constraint firstItem="LTe-8x-8KY" firstAttribute="centerX" secondItem="gGB-VY-i5Z" secondAttribute="centerX" id="QVc-qW-hew"/>
+                            <constraint firstItem="LTe-8x-8KY" firstAttribute="height" secondItem="gGB-VY-i5Z" secondAttribute="height" multiplier="1:10" id="QjL-3g-9rI"/>
+                            <constraint firstItem="TLA-LR-xO4" firstAttribute="width" secondItem="LTe-8x-8KY" secondAttribute="height" multiplier="104:23" id="oUg-E8-EBl"/>
+                            <constraint firstItem="TLA-LR-xO4" firstAttribute="width" secondItem="cce-W1-kbz" secondAttribute="width" multiplier="5:6" id="pVH-KI-m8F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gGB-VY-i5Z"/>
                     </view>
                     <navigationItem key="navigationItem" id="FBQ-yd-kl1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCR-UQ-ucy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049" y="307"/>
+            <point key="canvasLocation" x="1048.8" y="306.6502463054187"/>
         </scene>
         <!--Rectangle View Controller-->
         <scene sceneID="dR8-p0-EXT">
@@ -195,6 +211,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RNz-qk-rEV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="l6b-mW-VaQ"/>
                     <connections>
                         <outlet property="labelResult" destination="EH4-fT-BXI" id="CBP-lB-Aay"/>
                         <outlet property="length" destination="kzM-sQ-9ko" id="Q9b-H3-zhI"/>
@@ -271,6 +288,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aAe-lf-bhp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ffU-F3-iEb"/>
                     <connections>
                         <outlet property="height" destination="Kha-9T-q60" id="2qN-oK-WnM"/>
                         <outlet property="labelResult" destination="fMU-pa-mn9" id="qAB-0J-QFj"/>
